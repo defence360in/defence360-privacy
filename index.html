@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111714">
+  <meta name="description" content="Defence360 Privacy Policy — how we collect, use, protect and delete personal information when you use the Defence360 exam preparation app.">
+  <title>Privacy Policy | Defence360</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #202719;
+      --ink-soft: #46513c;
+      --muted: #687164;
+      --olive: #596638;
+      --olive-dark: #394326;
+      --olive-pale: #edf0e5;
+      --paper: #f7f8f4;
+      --surface: #ffffff;
+      --line: #e5e9df;
+      --gold: #c69b52;
+      --shadow: 0 18px 55px rgba(34, 43, 27, .08);
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 128px; }
+    body {
+      margin: 0; color: var(--ink); background: var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.72; -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--olive); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { color: var(--olive-dark); }
+    .site-header {
+      position: sticky; top: 0; z-index: 1000;
+      color: #f8f9f3;
+      background: rgba(12, 16, 15, .90);
+      -webkit-backdrop-filter: blur(22px) saturate(155%);
+      backdrop-filter: blur(22px) saturate(155%);
+      border-bottom: 1px solid rgba(255,255,255,.14);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, .28);
+    }
+    .header-inner {
+      max-width: 1120px; min-height: 88px; margin: 0 auto; padding: 12px 24px;
+      display: flex; align-items: center; justify-content: space-between; gap: 20px;
+    }
+    .brand { display: inline-flex; align-items: center; gap: 13px; color: #f8f9f3; text-decoration: none; min-width: 0; }
+    .brand-logo { width: 56px; height: 56px; flex: 0 0 56px; border-radius: 14px; display: block; box-shadow: 0 3px 12px rgba(0,0,0,.18); }
+    .brand-name { display: block; font-size: 1.1rem; line-height: 1.2; font-weight: 800; letter-spacing: -.02em; }
+    .brand-caption { display: block; margin-top: 4px; color: #d1dac4; font-size: .76rem; line-height: 1.25; letter-spacing: .02em; }
+    .header-title { text-align: right; min-width: 0; }
+    .header-title strong { display: block; color: #fff; font-size: clamp(1.05rem, 2.4vw, 1.45rem); line-height: 1.2; letter-spacing: -.025em; }
+    .header-title span { display: block; margin-top: 5px; color: #dbe2d2; font-size: .78rem; line-height: 1.3; }
+    .layout { display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 28px; align-items: start; padding: 30px 24px 80px; margin-top: 0; }
+    aside {
+      position: sticky; top: 108px; background: rgba(255,255,255,.96); border: 1px solid var(--line);
+      border-radius: var(--radius); padding: 22px 18px; box-shadow: var(--shadow); max-height: calc(100vh - 44px); overflow: auto;
+    }
+    .toc-title { margin: 0 0 12px; font-size: .76rem; color: var(--muted); letter-spacing: .13em; text-transform: uppercase; font-weight: 800; }
+    .toc { display: grid; gap: 3px; }
+    .toc a { display: block; color: #4e5947; text-decoration: none; padding: 7px 10px; border-radius: 9px; font-size: .88rem; line-height: 1.35; }
+    .toc a:hover, .toc a:focus { background: var(--olive-pale); color: var(--olive-dark); outline: none; }
+    main { min-width: 0; }
+    .content-card {
+      background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: clamp(24px, 4vw, 42px); box-shadow: var(--shadow);
+    }
+    section { padding: 0 0 30px; margin: 0 0 30px; border-bottom: 1px solid var(--line); }
+    section:last-child { padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
+    h2 { font-size: 1.48rem; line-height: 1.25; letter-spacing: -.025em; margin: 0 0 14px; }
+    h3 { font-size: 1.03rem; margin: 22px 0 7px; color: var(--olive-dark); }
+    p { margin: 10px 0; color: #465044; }
+    ul, ol { padding-left: 1.25rem; color: #465044; }
+    li { margin: 7px 0; padding-left: 3px; }
+    .lead { font-size: 1.04rem; color: #384333; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 4px; }
+    .chip { background: var(--olive-pale); color: var(--olive-dark); border-radius: 999px; padding: 5px 11px; font-size: .78rem; font-weight: 700; }
+    .callout {
+      border-left: 3px solid var(--gold); background: #faf8f1; padding: 13px 17px; margin: 18px 0;
+      border-radius: 0 10px 10px 0; color: #55503f; font-size: .92rem;
+    }
+    .steps { counter-reset: step; list-style: none; padding: 0; }
+    .steps li { counter-increment: step; position: relative; padding: 0 0 0 42px; margin: 15px 0; }
+    .steps li::before {
+      content: counter(step); position: absolute; left: 0; top: 0; width: 28px; height: 28px; border-radius: 50%;
+      background: var(--olive-pale); color: var(--olive-dark); display: grid; place-items: center; font-size: .8rem; font-weight: 800;
+    }
+    .contact-panel { background: #f1f3eb; border-radius: 14px; padding: 20px; margin-top: 18px; }
+    .contact-panel p { margin: 5px 0; }
+    .footer { max-width: 1120px; padding: 0 24px 42px; margin: 0 auto; color: var(--muted); font-size: .84rem; }
+    .footer a { color: inherit; }
+    .top-link { display: inline-block; margin-top: 14px; font-weight: 700; text-decoration: none; }
+    @media (max-width: 850px) {
+      .layout { grid-template-columns: 1fr; gap: 16px; padding-top: 20px; }
+      aside { position: static; max-height: none; }
+      .toc { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .header-inner { min-height: 78px; }
+      .brand-logo { width: 48px; height: 48px; flex-basis: 48px; }
+      .footer { margin-top: 0; }
+    }
+    @media (max-width: 520px) {
+      .layout { padding-left: 14px; padding-right: 14px; }
+      .header-inner { padding: 10px 14px; gap: 8px; flex-wrap: wrap; }
+      .brand { gap: 9px; }
+      .brand-logo { width: 42px; height: 42px; flex-basis: 42px; border-radius: 11px; }
+      .brand-name { font-size: .98rem; }
+      .brand-caption { font-size: .68rem; }
+      .header-title { flex-basis: calc(100% - 51px); margin-left: 51px; text-align: left; }
+      .header-title span { font-size: .68rem; max-width: none; }
+      .toc { grid-template-columns: 1fr; }
+    }
+    @media print {
+      body { background: white; }
+      .site-header { position: static; background: #0c100f !important; print-color-adjust: exact; }
+      .layout { display: block; margin: 0; padding: 20px; }
+      aside { display: none; }
+      .content-card { box-shadow: none; border: 0; padding: 0; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Defence360 — back to top">
+        <img class="brand-logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZyBjbGlwLXBhdGg9InVybCgjY2xpcDBfODIyXzc4ODUpIj4KPHJlY3Qgd2lkdGg9IjEwMjQiIGhlaWdodD0iMTAyNCIgcng9IjIyNSIgZmlsbD0iIzRCNTUyOCIvPgo8ZyBmaWx0ZXI9InVybCgjZmlsdGVyMF9mXzgyMl83ODg1KSI+CjxlbGxpcHNlIGN4PSI5OC40MjIxIiBjeT0iLTExNy4zNDciIHJ4PSI3MTAuMTQxIiByeT0iNzAxLjkiIHRyYW5zZm9ybT0icm90YXRlKC0yMC44NDQ3IDk4LjQyMjEgLTExNy4zNDcpIiBmaWxsPSIjODE3QzFBIi8+CjwvZz4KPHBhdGggZD0iTTUxMiAxMzUuNzVMODM0LjUgMjU2LjY4OFY0OTguNTYyQzgzNC41IDY5Ny40MzggNjk0Ljc1IDgzNy4xODggNTEyIDg4OC4yNUMzMjkuMjUgODM3LjE4OCAxODkuNSA2OTcuNDM4IDE4OS41IDQ5OC41NjJWMjU2LjY4OEw1MTIgMTM1Ljc1WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTUxMiAxMzUuMzMzVjY3MC41MDhWNzIwLjU2NEM1MTIgNzg3LjMwNCA1MTIgODc1LjczNSA1MTIgODg4LjY2NkM2OTUuMjIyIDgzNy41NDcgODM1LjMzMyA2OTcuNjQzIDgzNS4zMzMgNDk4LjU0N1YyNTYuNDA0TDUxMiAxMzUuMzMzWiIgZmlsbD0iI0VFRUVFRSIvPgo8cGF0aCBkPSJNNjU5Ljk5NiA2NDkuODY2QzY3Mi45MDkgNjQyLjU0OSA2ODkuMzE2IDY0Ny4wODUgNjk2LjYzNCA2NTkuOTk3QzcwMy45NTIgNjcyLjkwOSA2OTkuNDE2IDY4OS4zMTcgNjg2LjUwNCA2OTYuNjM1TDUyNS4yNTQgNzg4LjAyQzUxNy4wMzYgNzkyLjY3NiA1MDYuOTY0IDc5Mi42NzYgNDk4Ljc0NiA3ODguMDJMMzM3LjQ5NiA2OTYuNjM1QzMyNC41ODQgNjg5LjMxNyAzMjAuMDQ4IDY3Mi45MDkgMzI3LjM2NiA2NTkuOTk3QzMzNC42ODQgNjQ3LjA4NSAzNTEuMDkxIDY0Mi41NDkgMzY0LjAwNCA2NDkuODY2TDUxMiA3MzMuNzE5TDY1OS45OTYgNjQ5Ljg2NlpNNjU5Ljk5NiA1NDIuMzY2QzY3Mi45MDkgNTM1LjA0OSA2ODkuMzE2IDUzOS41ODUgNjk2LjYzNCA1NTIuNDk3QzcwMy45NTIgNTY1LjQwOSA2OTkuNDE2IDU4MS44MTcgNjg2LjUwNCA1ODkuMTM1TDUyNS4yNTQgNjgwLjUyQzUxNy4wMzYgNjg1LjE3NiA1MDYuOTY0IDY4NS4xNzYgNDk4Ljc0NiA2ODAuNTJMMzM3LjQ5NiA1ODkuMTM1QzMyNC41ODQgNTgxLjgxNyAzMjAuMDQ4IDU2NS40MDkgMzI3LjM2NiA1NTIuNDk3QzMzNC42ODQgNTM5LjU4NSAzNTEuMDkxIDUzNS4wNDkgMzY0LjAwNCA1NDIuMzY2TDUxMiA2MjYuMjE5TDY1OS45OTYgNTQyLjM2NloiIGZpbGw9IiNFODk2MkUiLz4KPHBhdGggZD0iTTUxMiAyNjQuNzUxTDU1Mi4zMTMgMzQ1LjM3Nkw2NDEgMzU4LjgxM0w1NzYuNSA0MjAuNjI2TDU5Mi42MjUgNTA5LjMxM0w1MTIgNDY2LjMxM0w0MzEuMzc1IDUwOS4zMTNMNDQ3LjUgNDIwLjYyNkwzODMgMzU4LjgxM0w0NzEuNjg4IDM0NS4zNzZMNTEyIDI2NC43NTFaIiBmaWxsPSIjNEI1NTI4Ii8+CjwvZz4KPGRlZnM+CjxmaWx0ZXIgaWQ9ImZpbHRlcjBfZl84MjJfNzg4NSIgeD0iLTEwOTkuOTciIHk9Ii0xMzA5LjU5IiB3aWR0aD0iMjM5Ni43OSIgaGVpZ2h0PSIyMzg0LjQ4IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9InNoYXBlIi8+CjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjI0NC41NSIgcmVzdWx0PSJlZmZlY3QxX2ZvcmVncm91bmRCbHVyXzgyMl83ODg1Ii8+CjwvZmlsdGVyPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzgyMl83ODg1Ij4KPHJlY3Qgd2lkdGg9IjEwMjQiIGhlaWdodD0iMTAyNCIgcng9IjIyNSIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K" alt="Defence360 logo">
+        <span>
+          <span class="brand-name">Defence360</span>
+          <span class="brand-caption">Independent exam-preparation app</span>
+        </span>
+      </a>
+      <div class="header-title" aria-label="Privacy Policy">
+        <strong>Privacy Policy</strong>
+        <span>Last updated 16 November 2026</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside aria-label="Table of contents">
+      <p class="toc-title">On this page</p>
+      <nav class="toc">
+        <a href="#overview">1. Overview</a>
+        <a href="#information">2. Information we handle</a>
+        <a href="#permissions">3. Device permissions</a>
+        <a href="#uses">4. How we use information</a>
+        <a href="#sharing">5. Sharing and service providers</a>
+        <a href="#payments">6. Payments</a>
+        <a href="#notifications">7. Notifications</a>
+        <a href="#retention">8. Retention</a>
+        <a href="#deletion">9. Account deletion</a>
+        <a href="#security">10. Security</a>
+        <a href="#children">11. Children and young users</a>
+        <a href="#rights">12. Your choices and rights</a>
+        <a href="#transfers">13. Processing locations</a>
+        <a href="#third-party">14. Third-party links</a>
+        <a href="#changes">15. Policy changes</a>
+        <a href="#contact">16. Contact and grievances</a>
+        <a href="#independence">17. Independence disclaimer</a>
+      </nav>
+    </aside>
+
+    <main>
+      <article class="content-card">
+        <section id="overview">
+          <h2>1. Overview</h2>
+          <p class="lead">Defence360 is an independent educational application that helps learners prepare for Indian Army Agniveer, Territorial Army and related recruitment examinations. Features may include courses and lessons, mock tests, past-year and sample papers, topic quizzes, notes, daily quizzes, leaderboards, doubt submission, recruitment updates and a rally fitness estimator.</p>
+          <p>In this policy, “Defence360”, “we”, “us” and “our” mean <strong>Defence360</strong>, the operator of the Defence360 app. “You” means a person who uses the app.</p>
+          <p>We aim to collect only information needed to provide, secure and improve the learning service. We do not request access to your contacts, precise location or advertising ID for the app's stated functionality, and we do not use your information to serve behavioural advertising.</p>
+          <div class="chips">
+            <span class="chip">Learning service</span><span class="chip">OTP sign-in</span><span class="chip">Optional paid content</span><span class="chip">Account deletion in app</span>
+          </div>
+        </section>
+
+        <section id="information">
+          <h2>2. Information we handle</h2>
+          <h3>2.1 Information you provide</h3>
+          <ul>
+            <li><strong>Name:</strong> your name, provided when you create an account.</li>
+            <li><strong>Mobile number:</strong> your Indian mobile number, used for one-time-password (OTP) sign-in and account identification.</li>
+            <li><strong>Learning and support content:</strong> doubts or questions you submit, your quiz and test responses, scores, lesson and notes progress, and related learning activity.</li>
+            <li><strong>Fitness-estimator inputs:</strong> running time, pull-up count and whether you pass the ditch and zig-zag events. If you are signed in, the resulting estimate may be recorded with your account.</li>
+            <li><strong>Preferences:</strong> your selected question language and app theme preference.</li>
+          </ul>
+          <h3>2.2 Information generated when you use the app</h3>
+          <ul>
+            <li><strong>Account and session information:</strong> internal user and session identifiers, authentication and session status, and records needed to keep you signed in securely.</li>
+            <li><strong>Device and app information:</strong> app/device identifier, device model, Android version, app version and Firebase Cloud Messaging (FCM) push token when notifications are enabled or registered.</li>
+            <li><strong>Learning records:</strong> tests attempted, selected answers, scores, accuracy, ranks and points, lesson/note progress, streaks, daily activity and announcement read status.</li>
+            <li><strong>Purchase records:</strong> product, order and payment reference identifiers, amount, payment status, entitlement and refund status. We do not collect your UPI PIN.</li>
+            <li><strong>Security and technical records:</strong> request identifiers, limited diagnostic and operational logs, and network information such as IP address where available to protect the service, apply rate limits and investigate abuse.</li>
+          </ul>
+          <h3>2.3 Information we do not intend to collect</h3>
+          <p>The app is not designed to collect your contacts, precise location, advertising ID, address book, microphone recordings or photos. We do not require these to provide the described learning features.</p>
+          <h3>2.4 Information from third-party services</h3>
+          <p>We may receive payment status and transaction references from Razorpay so that we can confirm purchases, grant access to paid courses or passes, and process refund-related entitlement changes. Firebase services may provide app diagnostics and push-delivery functionality as described in this policy.</p>
+        </section>
+
+        <section id="permissions">
+          <h2>3. Device permissions</h2>
+          <ul>
+            <li><strong>Internet/network access:</strong> required to sign in, load learning content, submit tests, make purchases and sync progress.</li>
+            <li><strong>Notifications:</strong> used for daily quiz announcements, app updates and replies to doubts. You can control notifications through Android settings.</li>
+            <li><strong>SMS Retriever / OTP assistance:</strong> Android's SMS Retriever capability may help the app read an OTP message intended for verification. The app does not need general access to your SMS inbox for this flow.</li>
+          </ul>
+          <p>Permission availability and exact prompts may vary by Android version and app release. You can change permissions in your device settings, although some features may not work without the relevant permission.</p>
+        </section>
+
+        <section id="uses">
+          <h2>4. How we use information</h2>
+          <p>We use information for the following purposes:</p>
+          <ul>
+            <li>Create and manage your account, verify your mobile number through OTP, authenticate sessions and prevent unauthorised access.</li>
+            <li>Provide courses, lessons, notes, papers, quizzes, mock tests, answer reviews, syllabus information and recruitment-related updates.</li>
+            <li>Save your attempts, answers, scores, progress, daily activity, streaks, ranks and leaderboard points.</li>
+            <li>Respond to doubts and send a notification when a reply is available.</li>
+            <li>Process purchases, verify payments, provide entitlements and reflect refunds or payment failures.</li>
+            <li>Send service notifications, such as a daily quiz being available or an announcement being published, where notifications are enabled.</li>
+            <li>Maintain service reliability, diagnose crashes, detect suspicious activity, enforce usage limits and protect accounts and systems.</li>
+            <li>Meet applicable legal, accounting, regulatory and dispute-resolution requirements.</li>
+          </ul>
+          <p>We do not use your learning history or personal information to build advertising profiles or sell targeted advertising.</p>
+        </section>
+
+        <section id="sharing">
+          <h2>5. Sharing and service providers</h2>
+          <p>We do not sell your personal information. We share or make information available only where needed to operate the service, complete a transaction, protect users or comply with law.</p>
+          <h3>5.1 Providers used by the service</h3>
+          <ul>
+            <li><strong>mTalkz (SMS provider):</strong> receives your mobile number and the OTP message details needed to deliver sign-in verification messages.</li>
+            <li><strong>Google Firebase:</strong> Firebase Cloud Messaging is used to deliver app notifications. Firebase Analytics may receive the events configured in the app, such as login success, test start/submission, lesson play/completion, notes opened, purchase events, doubt creation and fitness-estimator use. The PRD specifies that these analytics events are designed without personal data. Crashlytics may receive crash diagnostics; the configured release build uses a hashed user identifier rather than a plain user ID.</li>
+            <li><strong>Razorpay:</strong> processes UPI payments and provides payment confirmation, failure and refund events. Payment processing is subject to Razorpay's own terms and privacy policy.</li>
+            <li><strong>Hosting and storage providers:</strong> our app API, database and private object storage providers process and store account, learning and content data to operate the service. The production hosting provider and region may change; we will update this policy if a change materially affects how information is handled.</li>
+          </ul>
+          <h3>5.2 Other permitted disclosures</h3>
+          <p>We may disclose information to professional advisers, auditors, regulators, law-enforcement authorities or other parties where required by applicable law, a valid legal process, to protect rights and safety, or to investigate fraud, security incidents or misuse. If the service is reorganised or transferred, information may be transferred as part of that transaction subject to appropriate safeguards and applicable law.</p>
+          <p>Service providers are expected to process information for the services they provide to us and under appropriate contractual and security arrangements.</p>
+        </section>
+
+        <section id="payments">
+          <h2>6. Payments</h2>
+          <p>Paid courses and the Mock Series pass may be purchased through Razorpay using the payment methods made available in the app, currently designed around UPI. The app creates an order on our server and verifies the payment result with Razorpay before granting access.</p>
+          <p>We receive transaction references, order details, amount and payment status so we can provide the purchased entitlement and reconcile refunds. The PRD specifies that payer email fields are not collected at checkout and are stripped from stored webhook payloads. We do not receive or store your UPI PIN.</p>
+          <p>Payment credentials and payment-app information are handled by Razorpay and/or the payment app you choose. Please review their privacy terms before completing a transaction. Deleting your Defence360 account does not itself cancel a payment, automatically create a refund or erase legally required transaction records.</p>
+        </section>
+
+        <section id="notifications">
+          <h2>7. Notifications</h2>
+          <p>If push notifications are enabled, we use an FCM registration token associated with your device to send service messages, including daily quiz availability, announcements and replies to doubts. You can turn off notifications in Android settings. If you log out or delete your account, the app is designed to remove the relevant device token from the account.</p>
+        </section>
+
+        <section id="retention">
+          <h2>8. How long we keep information</h2>
+          <p>We keep information for as long as needed to provide the service, maintain security, resolve support issues, meet legal and accounting obligations, and enforce our agreements. Retention periods depend on the type of information and the reason it is held.</p>
+          <ul>
+            <li><strong>OTP challenges:</strong> expired or used OTP challenge records are subject to routine cleanup; the service design purges OTP challenges older than seven days.</li>
+            <li><strong>Authentication sessions:</strong> revoked or expired refresh-token records are subject to cleanup after the applicable retention window (the service design specifies more than 30 days after revocation or expiry).</li>
+            <li><strong>Account deletion:</strong> see <a href="#deletion">Section 9</a> for the 30-day grace period and subsequent anonymisation/deletion steps.</li>
+            <li><strong>Payment and order records:</strong> certain order records are retained for tax, accounting, fraud prevention and dispute handling, even after account deletion.</li>
+          </ul>
+          <div class="callout"><strong>Important:</strong> Some learning history and transaction-related records may need to be retained after account deletion. The exact retention period for attempts, answers, progress, leaderboard records and entitlement history must be defined in our operational retention schedule and applied consistently with applicable law.</div>
+        </section>
+
+        <section id="deletion">
+          <h2>9. Account deletion</h2>
+          <p>You can request deletion from inside the Defence360 app. We provide a 30-day grace period in case you change your mind.</p>
+          <h3>9.1 How to request deletion in the app</h3>
+          <ol class="steps">
+            <li>Open Defence360 and sign in to the account you want to delete.</li>
+            <li>Go to <strong>Profile → Account options → Delete account</strong>.</li>
+            <li>Review the information shown and confirm the deletion request. For security, the app requires a recently authenticated session.</li>
+            <li>The account is marked for deletion, your active sessions are revoked and your registered FCM tokens are cleared.</li>
+          </ol>
+          <h3>9.2 What happens during the 30-day grace period</h3>
+          <p>For 30 days after your deletion request, your account remains in a pending-deletion state. If you sign in to the same account during this period, the deletion request is cancelled and the account becomes active again.</p>
+          <h3>9.3 What happens after 30 days</h3>
+          <p>If you do not sign in during the grace period, the service's deletion process is designed to:</p>
+          <ul>
+            <li>Replace your account name with <strong>“Deleted user”</strong>.</li>
+            <li>Replace your mobile number with a randomly generated placeholder so it no longer identifies your phone number.</li>
+            <li>Delete registered device records and fitness-estimator logs.</li>
+            <li>Soft-delete your doubts, so they are no longer treated as active user-submitted support requests.</li>
+            <li>Retain order records where needed for tax and accounting records.</li>
+          </ul>
+          <p>Other records, such as test attempts, answer history, learning progress, leaderboard records and entitlement history, may be subject to retention where needed for service integrity, legal compliance, accounting, fraud prevention or dispute handling. We will apply appropriate access controls and de-identification where practicable. Contact us if you need details about a particular record type.</p>
+          <h3>9.4 Deletion does not automatically</h3>
+          <ul>
+            <li>Refund a purchase or reverse a completed payment.</li>
+            <li>Cancel a payment obligation or remove transaction records that we are legally required to retain.</li>
+            <li>Delete information already held independently by a payment provider, mobile carrier, app store or other third party under its own privacy policy.</li>
+          </ul>
+          <h3>9.5 If you cannot access your account</h3>
+          <p>If you cannot sign in to submit an in-app deletion request, contact us using the email in <a href="#contact">Section 16</a>. Include the mobile number associated with the account in a secure message and provide enough information for us to verify that you control it. Do not send your OTP or password. We may ask for reasonable verification before acting on a request.</p>
+          <div class="callout"><strong>Deletion timing:</strong> The 30-day grace period and the steps above describe the current product design. The published app must implement these steps and provide a working support route before this policy is used for store submission.</div>
+        </section>
+
+        <section id="security">
+          <h2>10. Security</h2>
+          <p>We use technical and organisational safeguards designed to protect information against unauthorised access, alteration, disclosure or loss. These include OTP-based sign-in, short-lived access tokens, rotating refresh tokens, encrypted token storage on supported Android devices, access controls, rate limiting, private object storage, HTTPS in transit, restricted administrative roles and redaction of sensitive values from application logs.</p>
+          <p>No method of transmission or storage is completely secure. We cannot guarantee absolute security, but we work to identify and address vulnerabilities and security incidents. If a reportable personal-data breach occurs, we will take the steps required by applicable law.</p>
+        </section>
+
+        <section id="children">
+          <h2>11. Children and young users</h2>
+          <p>Defence360 is intended for recruitment-exam aspirants. Some users may be under 18. We do not knowingly permit a child to use features involving personal-data processing where legally required verifiable parental or guardian consent has not been obtained.</p>
+          <p>Our product requirements identify a guardian-consent step for users under 18 as an item that must be resolved before launch. If you are a parent or guardian and believe a child has provided personal information without the required consent, contact us using <a href="#contact">Section 16</a>. We will review the request and take appropriate steps.</p>
+          <div class="callout"><strong>Launch requirement:</strong> The under-18 age-check and verifiable guardian-consent process must be implemented and operational before the app is made available to users who require it. This policy text alone does not collect or verify parental consent.</div>
+        </section>
+
+        <section id="rights">
+          <h2>12. Your choices and rights</h2>
+          <p>Subject to applicable law, you may have the right to request information about the personal data we process, seek correction or updating of inaccurate information, request erasure, withdraw consent where processing is based on consent, and raise a grievance.</p>
+          <ul>
+            <li><strong>Profile information:</strong> you can update your name and available preferences in the app.</li>
+            <li><strong>Consent:</strong> the app displays a privacy notice at first sign-in and records the notice version and consent time. If a new notice version requires acceptance, the app may ask you to review it.</li>
+            <li><strong>Notifications:</strong> control push notifications through Android settings.</li>
+            <li><strong>Account deletion:</strong> use the process in <a href="#deletion">Section 9</a>.</li>
+            <li><strong>Grievances and requests:</strong> contact us using <a href="#contact">Section 16</a>. We may need to verify your identity before responding.</li>
+          </ul>
+          <p>We will respond within the time required by applicable law. Some information may be retained where a legal obligation, legitimate security need or dispute requires it; where we cannot fulfil a request in full, we will explain the reason where legally permitted.</p>
+        </section>
+
+        <section id="transfers">
+          <h2>13. Processing locations and cross-border transfers</h2>
+          <p>Defence360 is designed for users in India. Our production hosting provider and final hosting region have not yet been selected in the product requirements. Some service providers, including Firebase or payment and messaging providers, may process information in locations outside your state or country under their own infrastructure and contractual arrangements.</p>
+          <p>Where information is transferred or accessed across borders, we will do so subject to applicable Indian law and any restrictions or safeguards that apply. We will update this section if our production deployment materially changes the locations in which personal information is processed.</p>
+        </section>
+
+        <section id="third-party">
+          <h2>14. Third-party links and services</h2>
+          <p>The app may display links to official recruitment notices, external websites, payment apps or third-party services. Those services are not controlled by Defence360. Their own terms and privacy policies govern information you provide directly to them. We encourage you to review those policies before using an external service.</p>
+        </section>
+
+        <section id="changes">
+          <h2>15. Changes to this policy</h2>
+          <p>We may update this policy when the app's features, service providers, legal requirements or data practices change. We will update the “Last updated” date above and, where required, provide an in-app notice or request renewed consent before continuing with processing that requires it. The current version will be available at this URL.</p>
+        </section>
+
+        <section id="contact">
+          <h2>16. Contact and grievances</h2>
+          <p>For privacy questions, data requests, account deletion assistance or grievances, contact the operator of Defence360:</p>
+          <div class="contact-panel">
+            <p><strong>Developer / Data Fiduciary:</strong> Defence360</p>
+            <p><strong>Privacy / Grievance email:</strong> <a href="mailto:defence360.in@gmail.com">defence360.in@gmail.com</a></p>
+            <p><strong>Subject line suggestion:</strong> Defence360 – Privacy Request</p>
+          </div>
+          <p>Please describe your request and provide the mobile number linked to your account only where necessary to identify it. Never include an OTP, password, UPI PIN or full payment credentials in your message.</p>
+        </section>
+
+        <section id="independence">
+          <h2>17. Independence disclaimer</h2>
+          <p>Defence360 is an independent educational and exam-preparation application. It is <strong>not affiliated with, endorsed by, or an official product of the Indian Army, the Ministry of Defence, or any government recruitment authority</strong>. Official notices and recruitment information should always be checked against the relevant government or recruitment authority's website.</p>
+        </section>
+      </article>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div>© 2026 Defence360. All rights reserved.</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>
